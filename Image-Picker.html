@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas image picker - Luthfi Makarim</title>
+</head>
+
+    <div>
+        <select onchange="change()" id="One">
+            <option>Select</option>
+            <option value="photo1">tikus</option>
+            <option value="photo2">kerbau</option>
+            <option value="photo3">anjing</option>
+            <option value="photo4">gajah</option>
+            <option value="photo5">singa</option>
+        </select>
+    </div><br>
+        <img src="" alt="" id="Two" width="100%"><br>
+
+<script>
+    function change(){
+        let img = document.getElementById("One").value
+        let image = document.getElementById("Two")
+        if(img == "photo1"){
+           image.src = "tikus.jpg"
+            alert ("This is a Mouse!")
+        }else if(img == "photo2"){
+            image.src = "kerbau.jpg"
+            alert ("This is a Buffalo!")
+        }else if(img == "photo3"){
+            image.src = "anjing.jpg"
+            alert ("This is a Dog")
+        }else if(img == "photo4"){
+            image.src = "gajah.jpg"
+            alert ("This is a Elephant")
+        }else if(img == "photo5") {
+            image.src = "singa.jpg"
+            alert("This is a Lion")
+        }    
+    }
+</script>
+
+</body>
+</html>
